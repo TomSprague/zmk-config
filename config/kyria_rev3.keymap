@@ -15,23 +15,23 @@
     // chain-length = <25>; // Uncomment if using only per-key LEDs.
 };
  */
-macros {
-    wpass: wpass {
-    label = "Standard";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
+/{
+    macros {
+     wpass: wpass {
+        label = "Standard";
+        compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
 
-    // This example types:  Hello, ZMK_rocks! 
-    bindings = <
-        &macro_tap
-        &kp MINUS &kp LS(W) &kp A &kp N &kp D &kp 8 
-        &kp MINUS &kp LS(C) &kp L &kp U &kp N &kp K &kp Y 
-        &kp MINUS &kp LS(S) &kp A &kp N &kp D &kp S &kp T &kp O &kp R &kp M
-        &kp RET
+        // This example types:  Hello, ZMK_rocks! 
+         bindings = <
+         &macro_tap
+            &kp MINUS &kp LS(W) &kp A &kp N &kp D &kp 8 
+            &kp MINUS &kp LS(C) &kp L &kp U &kp N &kp K &kp Y 
+            &kp MINUS &kp LS(S) &kp A &kp N &kp D &kp S &kp T &kp O &kp R &kp M
+            &kp RET
             >;
         };
     };
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -77,7 +77,7 @@ macros {
             bindings = <
             &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6                                                                &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
             &trans &trans &trans &trans &trans &trans                                                                &trans &trans &trans &trans &trans &trans
-            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &wpass     &trans &trans &trans &trans &trans &trans &trans &trans
+            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans      &trans &trans &trans &trans &trans &trans &trans &trans
                          &bt BT_CLR &trans &trans &trans &kp LC(LA(DEL))                                    &trans &trans &trans &trans &trans
             >;
 
