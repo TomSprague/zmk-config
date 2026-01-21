@@ -39,7 +39,7 @@
             &macro_tap
                 &kp T &kp LS(A) &kp N0 &kp LS(N6) &kp N4 &kp K &kp T &kp LS(Y) &kp K &kp N1 &kp N1 &kp LS(L) &kp LS(N5) &kp O &kp LS(P) &kp LS(N2) &kp LS(U) &kp F
 
-        };
+        >};
     };
     keymap {
         compatible = "zmk,keymap";
